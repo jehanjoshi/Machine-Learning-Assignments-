@@ -225,5 +225,6 @@ anova(sat.regional)
 contrasts(states.data$region)
 coef(summary(lm(energy ~ C(region, base=4), data=states.data)))
 coef(summary(lm(energy ~ C(region, contr.helmert),data=states.data)))
+## Looking at the coeff and the p value in the summary it seems unlikely that there are significant differences across the regions 
 
 
